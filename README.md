@@ -1,4 +1,4 @@
-## Suzal Sharma — Animated Resume (React + Tailwind + Framer Motion)
+## Sujal Sharma — Animated Resume (React + Tailwind + Framer Motion)
 
 A modern single-page resume with neon blue accents, parallax blobs, custom cursor, typewriter hero, and smooth section transitions.
 

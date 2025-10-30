@@ -29,13 +29,13 @@ export default function Contact() {
           from_name: name,
           reply_to: email,
           message,
-          to_email: 'Suzalsukoimk5@gmail.com',
+          to_email: 'sujalsukoimk5@gmail.com',
         }, { publicKey })
         setStatus({ ok: true, msg: 'Message sent successfully!' })
         e.currentTarget.reset()
       } else {
         // Fallback: open mail client
-        window.location.href = `mailto:Suzalsukoimk5@gmail.com?subject=Portfolio%20Contact%20from%20${encodeURIComponent(name)}&body=${encodeURIComponent(message + '\n\nFrom: ' + email)}`
+        window.location.href = `mailto:sujalsukoimk5@gmail.com?subject=Portfolio%20Contact%20from%20${encodeURIComponent(name)}&body=${encodeURIComponent(message + '\n\nFrom: ' + email)}`
       }
     } catch (err) {
       setStatus({ ok: false, msg: 'Failed to send. Please try again.' })
@@ -72,7 +72,7 @@ export default function Contact() {
         <div className="space-y-4" data-aos="fade-left">
           <p className="text-white/70">Prefer email or socials?</p>
           <div className="flex gap-3">
-            <a className="glass rounded-xl px-4 py-3 inline-flex items-center gap-2 hover:shadow-glow" href="mailto:Suzal@example.com"><FiMail /> Email</a>
+            <a className="glass rounded-xl px-4 py-3 inline-flex items-center gap-2 hover:shadow-glow" href="mailto:sujal@example.com"><FiMail /> Email</a>
             <a className="glass rounded-xl px-4 py-3 inline-flex items-center gap-2 hover:shadow-glow" href="https://www.linkedin.com/in/suzal-sharma-80863a248/" target="_blank" rel="noreferrer"><FiLinkedin /> LinkedIn</a>
             <a className="glass rounded-xl px-4 py-3 inline-flex items-center gap-2 hover:shadow-glow" href="https://github.com" target="_blank" rel="noreferrer"><FiGithub /> GitHub</a>
           </div>

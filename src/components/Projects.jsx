@@ -98,15 +98,8 @@ export default function Projects() {
                     alt={p.title}
                     className={`${p.title.includes('Dxyra') ? 'object-contain bg-slate-900' : 'object-cover'} w-full h-full object-center transition-transform duration-500 group-hover:scale-[1.03]`}
                     onError={(e) => {
-                      const el = e.currentTarget
-                      const triedPng = el.getAttribute('data-tried-png')
-                      if (!triedPng && el.src.endsWith('.jpg')) {
-                        el.setAttribute('data-tried-png', '1')
-                        el.src = el.src.replace(/\.jpg$/i, '.png')
-                        return
-                      }
-                      el.onerror = null
-                      el.src = 'data:image/svg+xml;utf8,' + encodeURIComponent(`<?xml version=\"1.0\" encoding=\"UTF-8\"?><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"1280\" height=\"720\" viewBox=\"0 0 1280 720\"><defs><linearGradient id=\"g\" x1=\"0\" x2=\"1\" y1=\"0\" y2=\"1\"><stop offset=\"0%\" stop-color=\"#0ea5e9\"/><stop offset=\"100%\" stop-color=\"#3b82f6\"/></linearGradient></defs><rect width=\"1280\" height=\"720\" fill=\"#0b1220\"/><rect x=\"40\" y=\"40\" width=\"1200\" height=\"640\" rx=\"24\" fill=\"url(#g)\" opacity=\"0.25\"/><text x=\"50%\" y=\"50%\" dominant-baseline=\"middle\" text-anchor=\"middle\" fill=\"#7dd3fc\" font-family=\"ui-sans-serif, system-ui\" font-size=\"28\">Preview</text></svg>`)
+                      e.currentTarget.onerror = null
+                      e.currentTarget.src = 'data:image/svg+xml;utf8,' + encodeURIComponent(`<?xml version=\"1.0\" encoding=\"UTF-8\"?><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"1280\" height=\"720\" viewBox=\"0 0 1280 720\"><defs><linearGradient id=\"g\" x1=\"0\" x2=\"1\" y1=\"0\" y2=\"1\"><stop offset=\"0%\" stop-color=\"#0ea5e9\"/><stop offset=\"100%\" stop-color=\"#3b82f6\"/></linearGradient></defs><rect width=\"1280\" height=\"720\" fill=\"#0b1220\"/><rect x=\"40\" y=\"40\" width=\"1200\" height=\"640\" rx=\"24\" fill=\"url(#g)\" opacity=\"0.25\"/><text x=\"50%\" y=\"50%\" dominant-baseline=\"middle\" text-anchor=\"middle\" fill=\"#7dd3fc\" font-family=\"ui-sans-serif, system-ui\" font-size=\"28\">Preview</text></svg>`)
                     }}
                   />
                 </div>

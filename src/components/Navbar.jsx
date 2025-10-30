@@ -32,7 +32,7 @@ export default function Navbar() {
             onClick={() => handleScroll('home')}
             className="text-lg font-semibold tracking-wide"
           >
-            <span className="bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-400 bg-clip-text text-transparent">Suzal</span>
+            <span className="bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-400 bg-clip-text text-transparent">Sujal</span>
             <span className="text-white/70">.dev</span>
           </motion.button>
 
@@ -48,7 +48,7 @@ export default function Navbar() {
               </button>
             ))}
             <div className="mx-3 w-px h-6 bg-white/10" />
-            <a className="hover:text-white/90 text-white/70 p-2 rounded-lg hover:bg-white/5 transition" href="mailto:Suzal@example.com" aria-label="Email"><FiMail size={18} /></a>
+            <a className="hover:text-white/90 text-white/70 p-2 rounded-lg hover:bg-white/5 transition" href="mailto:sujal@example.com" aria-label="Email"><FiMail size={18} /></a>
             <a className="hover:text-white/90 text-white/70 p-2 rounded-lg hover:bg-white/5 transition" href="https://www.linkedin.com/in/suzal-sharma-80863a248/" target="_blank" rel="noreferrer" aria-label="LinkedIn"><FiLinkedin size={18} /></a>
             <a className="hover:text-white/90 text-white/70 p-2 rounded-lg hover:bg-white/5 transition" href="https://github.com" target="_blank" rel="noreferrer" aria-label="GitHub"><FiGithub size={18} /></a>
             <a
@@ -77,7 +77,7 @@ export default function Navbar() {
             ))}
             <div className="h-px bg-white/10 my-2" />
             <div className="flex items-center gap-3">
-              <a className="hover:text-white/90 text-white/70 p-2 rounded-lg hover:bg-white/5 transition" href="mailto:Suzal@example.com" aria-label="Email"><FiMail size={18} /></a>
+              <a className="hover:text-white/90 text-white/70 p-2 rounded-lg hover:bg-white/5 transition" href="mailto:sujal@example.com" aria-label="Email"><FiMail size={18} /></a>
               <a className="hover:text-white/90 text-white/70 p-2 rounded-lg hover:bg-white/5 transition" href="https://linkedin.com" target="_blank" rel="noreferrer" aria-label="LinkedIn"><FiLinkedin size={18} /></a>
               <a className="hover:text-white/90 text-white/70 p-2 rounded-lg hover:bg-white/5 transition" href="https://github.com" target="_blank" rel="noreferrer" aria-label="GitHub"><FiGithub size={18} /></a>
               <a href="#contact" className="ml-auto inline-flex items-center px-3 py-2 rounded-lg bg-gradient-to-r from-cyan-500 to-blue-600 text-white text-sm">Let’s Talk</a>
