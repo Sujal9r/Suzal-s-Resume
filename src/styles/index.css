@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --cursor-size: 24px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-base text-white antialiased;
+}
+
+/* Fancy selection */
+::selection {
+  background: rgba(3, 27, 89, 0.55);
+}
+
+/* Glass utility */
+.glass {
+  @apply bg-glass backdrop-blur-md border border-white/10;
+}
+
+.neon-text {
+  text-shadow: 0 0 10px rgba(3,27,89,0.6), 0 0 30px rgba(3,27,89,0.4);
+}
+
+/* Hide default cursor when custom cursor active */
+.hide-cursor {
+  cursor: none;
+}
+
+/* Scrollbar styling */
+*::-webkit-scrollbar { width: 10px; height: 10px; }
+*::-webkit-scrollbar-track { background: #0b1220; }
+*::-webkit-scrollbar-thumb { background: #14213d; border-radius: 10px; }
+*::-webkit-scrollbar-thumb:hover { background: #1f2b50; }
+
+
