@@ -175,8 +175,19 @@ export default function Hero() {
                 <div className="absolute inset-0 bg-gradient-to-br from-cyan-400/20 to-blue-600/20 mix-blend-overlay" />
                 <img
                   className="w-full h-full object-cover object-center transform group-hover:scale-110 transition-transform duration-700"
-                  src="/src/styles/Photo/image.png"
+                  src="/public/Asset/Photo/profile.png"
                   alt="Sujal Sharma"
+                  onError={(e) => {
+                    const el = e.currentTarget
+                    const triedPng = el.getAttribute('data-tried-png')
+                    if (!triedPng) {
+                      el.setAttribute('data-tried-png', '1')
+                      el.src = '/profile.png'
+                      return
+                    }
+                    el.onerror = null
+                    el.src = 'data:image/svg+xml;utf8,' + encodeURIComponent(`<?xml version=\\"1.0\\" encoding=\\"UTF-8\\"?><svg xmlns=\\"http://www.w3.org/2000/svg\\" width=\\"512\\" height=\\"512\\" viewBox=\\"0 0 512 512\\"><defs><linearGradient id=\\"g\\" x1=\\"0\\" x2=\\"1\\" y1=\\"0\\" y2=\\"1\\"><stop offset=\\"0%\\" stop-color=\\"#06b6d4\\"/><stop offset=\\"100%\\" stop-color=\\"#3b82f6\\"/></linearGradient></defs><rect width=\\"512\\" height=\\"512\\" fill=\\"#0b1220\\"/><circle cx=\\"256\\" cy=\\"256\\" r=\\"160\\" fill=\\"url(#g)\\"/></svg>`)
+                  }}
                 />
               </div>
 
