@@ -109,7 +109,7 @@ export default function Hero() {
             
             <h1 className="text-5xl md:text-7xl font-bold leading-tight">
               <span className="bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-400 bg-clip-text text-transparent animate-gradient bg-[length:200%_auto]">
-                Sujal Sharma
+                Suzal Sharma
               </span>
               <span className="block text-xl md:text-3xl text-slate-300 mt-4 font-light">
                 <Typewriter 
@@ -177,7 +177,7 @@ export default function Hero() {
                 <img
                   className='w-full h-full object-cover object-center transform group-hover:scale-110 transition-transform duration-700'
                   src={profileUrl}
-                  alt="Sujal Sharma"
+                  alt="Suzal Sharma"
                 />
               </div>
 

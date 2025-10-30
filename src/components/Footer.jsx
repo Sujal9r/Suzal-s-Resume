@@ -8,7 +8,7 @@ export default function Footer() {
       viewport={{ once: true }}
       className="py-10 text-center text-white/60"
     >
-      © 2025 Sujal Sharma
+      © 2025 Suzal Sharma
     </motion.footer>
   )
 }
