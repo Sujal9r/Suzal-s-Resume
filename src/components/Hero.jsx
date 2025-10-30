@@ -182,7 +182,7 @@ export default function Hero() {
                     const triedPng = el.getAttribute('data-tried-png')
                     if (!triedPng) {
                       el.setAttribute('data-tried-png', '1')
-                      el.src = '/profile.png'
+                      el.src = '/public/Asset/Photo/profile.png'
                       return
                     }
                     el.onerror = null
